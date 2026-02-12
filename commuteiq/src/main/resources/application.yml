@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: commuteiq
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/commuteiq?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+
+  cache:
+    type: simple
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    com.commuteiq.platform: DEBUG
+
+app:
+  jwt:
+    secret: Y29tbXV0ZWlxLXBsYXRmb3JtLXNlY3JldC1rZXktZm9yLWp3dC1hdXRoZW50aWNhdGlvbi0yMDI0
+    expiration: 86400000
+  route:
+    deviation-threshold-meters: 500
+  pooling:
+    distance-threshold-km: 2.0
+    max-walk-distance-meters: 500
