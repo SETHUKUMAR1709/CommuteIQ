@@ -5,7 +5,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/commuteiq?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: root
-    password: root
+    password: Database@1.
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
@@ -15,7 +15,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-        dialect: org.hibernate.dialect.MySQLDialect
 
   jackson:
     serialization:
@@ -25,7 +24,7 @@ spring:
     type: simple
 
 server:
-  port: 8080
+  port: 8081
 
 logging:
   level:

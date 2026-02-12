@@ -39,6 +39,7 @@ public class Employee extends Auditable {
     private String officeLocation;
 
     @Column(nullable = false)
+    @Builder.Default
     private Boolean active = true;
 
     @OneToOne(fetch = FetchType.LAZY)

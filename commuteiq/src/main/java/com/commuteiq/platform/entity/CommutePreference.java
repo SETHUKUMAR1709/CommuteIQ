@@ -32,6 +32,7 @@ public class CommutePreference extends Auditable {
     private Double maxWalkDistance;
 
     @Column(name = "same_gender_required", nullable = false)
+    @Builder.Default
     private Boolean sameGenderRequired = false;
 
     @Column(name = "work_from_home_days", length = 100)

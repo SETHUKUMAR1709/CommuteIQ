@@ -24,6 +24,7 @@ public class CommutePreferenceRequest {
     @Positive(message = "Max walk distance must be positive")
     private Double maxWalkDistance;
 
+    @Builder.Default
     private Boolean sameGenderRequired = false;
 
     @Size(max = 100)

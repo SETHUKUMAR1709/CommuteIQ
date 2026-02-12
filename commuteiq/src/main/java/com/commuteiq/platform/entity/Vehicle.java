@@ -29,5 +29,6 @@ public class Vehicle extends Auditable {
     private String vendorName;
 
     @Column(nullable = false)
+    @Builder.Default
     private Boolean active = true;
 }

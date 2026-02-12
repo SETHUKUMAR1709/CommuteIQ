@@ -26,9 +26,11 @@ public class Driver extends Auditable {
     private String licenseNumber;
 
     @Column(nullable = false)
+    @Builder.Default
     private Double rating = 5.0;
 
     @Column(nullable = false)
+    @Builder.Default
     private Boolean active = true;
 
     @OneToOne(fetch = FetchType.LAZY)

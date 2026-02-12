@@ -1,0 +1,27 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.commuteiq:commuteiq >-----------------------
+[INFO] Building commuteiq 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.0:clean (default-clean) @ commuteiq ---
+[INFO] Deleting C:\Users\SETHUKUMAR\Documents\GitHub\CommuteIQ\commuteiq\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ commuteiq ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ commuteiq ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 80 source files with javac [debug parameters release 17] to target\classes
+[WARNING] /C:/Users/SETHUKUMAR/Documents/GitHub/CommuteIQ/commuteiq/src/main/java/com/commuteiq/platform/dto/response/AuthResponse.java:[12,20] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /C:/Users/SETHUKUMAR/Documents/GitHub/CommuteIQ/commuteiq/src/main/java/com/commuteiq/platform/dto/request/CommutePreferenceRequest.java:[27,21] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /C:/Users/SETHUKUMAR/Documents/GitHub/CommuteIQ/commuteiq/src/main/java/com/commuteiq/platform/mapper/EmployeeMapper.java:[14,14] Unmapped target properties: "id, active, user, commutePreference".
+[WARNING] /C:/Users/SETHUKUMAR/Documents/GitHub/CommuteIQ/commuteiq/src/main/java/com/commuteiq/platform/mapper/EmployeeMapper.java:[16,10] Unmapped target properties: "createdAt, updatedAt, id, active, user, commutePreference".
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.764 s
+[INFO] Finished at: 2026-02-12T21:46:24+05:30
+[INFO] ------------------------------------------------------------------------
