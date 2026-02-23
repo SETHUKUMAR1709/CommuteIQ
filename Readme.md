@@ -405,6 +405,3 @@ This project is developed for educational and enterprise demonstration purposes.
 
 ---
 
-<p align="center">
-  Built by the CommuteIQ Team
-</p>
